@@ -15,7 +15,6 @@ from flask import Flask
 from flask import request
 from flask import jsonify
 from flask import make_response
-from concurrent.futures import ThreadPoolExecutor, as_completed
 import requests
 requests.packages.urllib3.disable_warnings()
 
