@@ -35,10 +35,7 @@ def get_v2ray_url():
 
     v2ray_list = list()
     urls = [
-        "https://raw.githubusercontent.com/eycorsican/rule-sets/master/kitsunebi_sub",
-        "https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray",
-        "https://jiang.netlify.com/",
-        "https://youlianboshi.netlify.com/"
+        "https://raw.githubusercontent.com/eycorsican/rule-sets/master/kitsunebi_sub"
     ]
     for url in urls:
         v2rays = get_v2ray_content(url)
