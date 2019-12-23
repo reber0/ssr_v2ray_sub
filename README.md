@@ -1,4 +1,4 @@
-# v2ray_sub
+# ssr_v2ray_sub
 
 修改 hosts
 ```bash
