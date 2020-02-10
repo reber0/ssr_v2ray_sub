@@ -11,9 +11,10 @@ import sys
 sys.dont_write_bytecode = True  # 不生成pyc文件
 
 import base64
+import urllib3
 import requests
 from util import read_file
-requests.packages.urllib3.disable_warnings()
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 def get_v2ray_url():
