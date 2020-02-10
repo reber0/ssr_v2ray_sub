@@ -40,7 +40,7 @@ def v2ray():
 def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
 
-@app.route("/check/v2ray")
+@app.route("/v2ray/txt")
 def check_v2ray_txt():
     import base64
     from v2ray import get_v2ray_txt
@@ -51,7 +51,7 @@ def check_v2ray_txt():
         v2ray_list = bytes("\n".join(v2ray_list), encoding="utf-8")
         return base64.b64encode(v2ray_list)
 
-@app.route("/check/ssr")
+@app.route("/ssr/txt")
 def check_ssr_txt():
     import base64
     from ssr import get_ssr_txt
